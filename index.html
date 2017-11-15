@@ -1,0 +1,78 @@
+<!--PerlaB. 11/14/2017-->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>
+			Perla E. Ballesteros RPG-Game
+		</title>
+
+		<!--reset css style to this html-->
+		<link rel="stylesheet"	type="text/css" href="assets/css/reset.css">
+
+		<!--Linking the css style to this html-->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+		<!--Linking to boostrap viewport-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--GOOGLE FONTS-->
+		
+		<!--jQuery-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<h1 id="title">Lucha Libre RPG!</h1>
+		</header>
+
+		<div id="startposition">
+
+			<div class="imgs1">
+				<h5 id="name1">Septiembre Negro<h5>
+				<img class= "imgs"id="septNegro" src="assets/images/septiembreNegro.jpg">
+				<h5 id="hp1"></h5>
+			</div>
+			<div class="imgs1">
+				<h5 id="name2">Cien Caras<h5>
+				<img class= "imgs"id="cienCaras" src="assets/images/ciencaras.jpg">
+				<h5 id="hp2"></h5>
+			</div>
+			<div class="imgs1">
+				<h5 id="name1">Blue Demon<h5>
+				<img class= "imgs"id="blueDemon" src="assets/images/bluedemon.jpg">
+				<h5 id="hp3"></h5>
+			</div>
+
+			<div class="imgs1">
+				<h5 id="name1">Zeus<h5>
+				<img class= "imgs"id="zeus" src="assets/images/zeus.jpg">
+				<h5 id="hp4"></h5>
+			</div>
+		</div>
+
+		
+		<h1 id="yourCharheading">Your Luchador</h1>
+		<div id="yourChar">	
+		</div>
+
+		<h1 id="availEnemheading">Luchadores Available to Fight</h1>
+		<div id="availEnem"></div>
+
+		<h1 id="fightSecheading">Fight Section</h1>	
+		<div id="fightSection">
+			<button type="button" id="fight">Luchar</button>
+		</div>
+
+		<h1 id="defenderheading">Contrincante</h1>
+		<div id="defenderArea">
+		
+		</div>
+		<!--linking to javascript>-->
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
+	</body>
+</html>
+	

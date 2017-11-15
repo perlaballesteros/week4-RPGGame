@@ -1,0 +1,8 @@
+.imgs{
+	width:100px;
+	height:150px;
+}
+.imgs1,.enemies{
+	display: inline-block;
+	text-align: center;
+}
