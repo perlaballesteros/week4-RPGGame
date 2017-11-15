@@ -30,8 +30,11 @@ var hPcontrincante;
 var cPcontrincante;
 //first time program runs
 var counter=0;
+//-------------------test-----------------------
+var counter2=1;
+//-----------------------------------------------
 
-$("#SeptNewgrohP").append(SeptNegro.hp);
+$("#SeptiembreNegrohP").text(SeptNegro.hp);
 $("#CienCarashP").append(CienCaras.hp);
 $("#BlueDemonhP").append(BlueDemon.hp);
 $("#ZeushP").append(Zeus.hp);
@@ -44,33 +47,34 @@ $("#chooseFighter").on("click",".fighters",function(){
 	switch (luchador){
 
 		case "SeptiembreNegro":
-			console.log(luchador);
+			
 			hPluchador=SeptNegro.hp;
 			aPluchador=SeptNegro.aP;
 			
 			break;
 		case "CienCaras":
-			console.log(luchador);
+			
 			hPluchador=CienCaras.hp;
 			aPluchador=CienCaras.aP;
 		
 			break;
 		case "BlueDemon":
-			console.log(luchador);
+			
 			hPluchador=BlueDemon.hp;
 			aPluchador=BlueDemon.aP;
 		
 			break;
 		case "Zeus":
-			console.log(luchador);
+			
 			hPluchador=Zeus.hp;
 			aPluchador=Zeus.aP;
 			
 			break;	
 	}
-
+	//-------------------test-----------------------
 	console.log(hPluchador);
 	console.log(aPluchador);
+	//-----------------------------------------------
 	
 
 	var clicked=$(this).detach();
@@ -89,38 +93,42 @@ $("#chooseAdversary").on("click",".fighters",function(){
 	switch (contrincante){
 
 		case "SeptiembreNegro":
-			console.log(contrincante);
+			
 			hPcontrincante=SeptNegro.hp;
 			cPcontrincante=SeptNegro.cP;
 
 			break;
 		case "CienCaras":
-			console.log(contrincante);
+			
 			hPcontrincante=CienCaras.hp;
 			cPcontrincante=CienCaras.cP;
 
 			break;
 		case "BlueDemon":
-			console.log(contrincante);
+			
 			hPcontrincante=BlueDemon.hp;
 			cPcontrincante=BlueDemon.cP;
 
 			break;
 		case "Zeus":
-			console.log(contrincante);
+			
 			hPcontrincante=Zeus.hp;
 			cPcontrincante=Zeus.cP;
 
 			break;	
 	}
-
+	//-------------------check-----------------------
 	console.log(hPcontrincante);
 	console.log(cPcontrincante);
+	//-----------------------------------------------
 
 	var clicked2=$(this).detach();
 	clicked2.appendTo("#adversaryArea");
 	$(this).toggleClass("fighters");
 	$(this).toggleClass("contrincante");
+
+	//setting msg blanck incase msg appeared before adv was chosen
+	$(".msg").text(" ");
 
 });
 
@@ -136,19 +144,41 @@ $("#fightButton").on("click",function(){
 		{
 			hPluchador=hPluchador-cPcontrincante;
 			hPcontrincante=hPcontrincante-aPluchador;
+			//-------------------test-----------------------
 			alert(hPluchador);
 			alert(hPcontrincante);
+			//-----------------------------------------------
+
 			$(".msg1").text(luchador+" has attacked for "+ aPluchador);
 			$(".msg2").text(contrincante+" attacked you back for "+ cPcontrincante);
 			$(".luchador .hp").text(hPluchador);
+			$(".contrincante .hp").text(hPcontrincante);
 			counter++;
 		}
 		else{
-			alert(hPluchador);
+			//-------------------test-----------------------
+			counter2++;
+			console.log(counter2);
+			console.log("hPluchadorb "+ hPluchador);
+			console.log("aPb "+ aPluchador);
+			console.log("hPcontrincanteb "+ hPcontrincante);
+			console.log("cPcontrincanteb "+ cPcontrincante);
+			//-----------------------------------------------
+
 			aPluchador=aPluchador+aPluchador;
 			hPluchador=hPluchador-cPcontrincante;
+			hPcontrincante=hPcontrincante-aPluchador;
 			$(".msg1").text(luchador+" has attacked for "+ aPluchador);
 			$(".msg2").text(contrincante+" attacked you back for "+ cPcontrincante);
+			$(".luchador .hp").text(hPluchador);
+			$(".contrincante .hp").text(hPcontrincante);
+			//-------------------test-----------------------
+			console.log("hPluchador "+ hPluchador);
+			console.log("aP "+ aPluchador);
+			console.log("hPcontrincante "+ hPcontrincante);
+			console.log("cPcontrincante "+ cPcontrincante);
+			//-----------------------------------------------
+			if(hPcontrincante<0)
 		}
 		
 	}	
