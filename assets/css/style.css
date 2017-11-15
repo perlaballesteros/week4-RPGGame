@@ -1,8 +1,10 @@
-.imgs{
+img{
 	width:100px;
 	height:150px;
+	margin:0 auto;
+
 }
-.imgs1,.enemies{
+.fighters,.enemies{
 	display: inline-block;
 	text-align: center;
 }

@@ -29,48 +29,58 @@
 			<h1 id="title">Lucha Libre RPG!</h1>
 		</header>
 
-		<div id="startposition">
+		<!---CHOOSE YOUR FIGHTER-->
+		<div id="chooseFighter">
 
-			<div class="imgs1">
-				<h5 id="name1">Septiembre Negro<h5>
-				<img class= "imgs"id="septNegro" src="assets/images/septiembreNegro.jpg">
-				<h5 id="hp1"></h5>
-			</div>
-			<div class="imgs1">
-				<h5 id="name2">Cien Caras<h5>
-				<img class= "imgs"id="cienCaras" src="assets/images/ciencaras.jpg">
-				<h5 id="hp2"></h5>
-			</div>
-			<div class="imgs1">
-				<h5 id="name1">Blue Demon<h5>
-				<img class= "imgs"id="blueDemon" src="assets/images/bluedemon.jpg">
-				<h5 id="hp3"></h5>
+			<div class="fighters" id="SeptNegro">
+				<div id="SeptNegroname">SeptiembreNegro</div>
+				<img id="SeptNegroPic" src="assets/images/septiembreNegro.jpg">
+				<div id="SeptNewgrohP"></div>
+
 			</div>
 
-			<div class="imgs1">
-				<h5 id="name1">Zeus<h5>
-				<img class= "imgs"id="zeus" src="assets/images/zeus.jpg">
-				<h5 id="hp4"></h5>
+			
+			<div class="fighters" id="CienCaras">
+				<div id="CienCarasname">CienCaras</div>
+				<img id="cienCarasPic" src="assets/images/ciencaras.jpg">
+				<div id="CienCarashP"></div>
 			</div>
+
+			<div class="fighters"id="BlueDemon">
+				<div id="BlueDemonname">BlueDemon</div>
+				<img id="BlueDemonPic" src="assets/images/bluedemon.jpg">
+				<div id="BlueDemonhP"></div>
+			</div>
+
+			<div class="fighters"id="Zeus">
+				<div id="Zeusname">Zeus</div>
+				<img id="ZeusPic" src="assets/images/zeus.jpg">
+				<div id="ZeushP"></div>
+			</div>
+
+
 		</div>
 
-		
-		<h1 id="yourCharheading">Your Luchador</h1>
-		<div id="yourChar">	
-		</div>
+		<!---YOUR FIGHTER-->
+		<h1 id="yourFighterheading">Your Luchador</h1>
+		<div id="yourFighter"></div>
 
-		<h1 id="availEnemheading">Luchadores Available to Fight</h1>
-		<div id="availEnem"></div>
+		<!---CHOOSE ADVERSARY-->
+		<h1 id="chooseAdversaryheading">Luchadores Available to Fight</h1>
+		<div id="chooseAdversary"></div>
 
+		<!---FIGHT SECTION/BUTTON-->
 		<h1 id="fightSecheading">Fight Section</h1>	
 		<div id="fightSection">
 			<button type="button" id="fight">Luchar</button>
 		</div>
 
-		<h1 id="defenderheading">Contrincante</h1>
-		<div id="defenderArea">
-		
+		<!---ADVERSARY AREA-->
+		<h1 id="adversaryHeading">Contrincante</h1>
+		<div id="adversaryArea">
 		</div>
+
+
 		<!--linking to javascript>-->
 		<script type="text/javascript" src="assets/javascript/game.js"></script>
 	</body>
