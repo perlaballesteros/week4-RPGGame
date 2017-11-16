@@ -19,6 +19,7 @@
 		<!--Linking to boostrap viewport-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!--GOOGLE FONTS-->
+		<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Lobster|Concert+One" rel="stylesheet">
 		
 		<!--jQuery-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -26,44 +27,56 @@
 
 	<body>
 		<header>
-			<h1 id="title">Lucha Libre RPG!</h1>
+			<div id="title">Lucha Libre </div>
+			<div id="sub">Role Playing Game</div>
 		</header>
 
 		<!---CHOOSE YOUR FIGHTER-->
+		<div id="background">
 		<div id="chooseFighter">
 
 			<div class="fighters" id="SeptiembreNegro">
-				<div id="SeptNegroname">SeptiembreNegro</div>
+				<div class="name" id="SeptNegroname">Septiembre Negro</div>
 				<img id="SeptNegroPic" src="assets/images/septiembreNegro.jpg">
 				<div class="hp" id="SeptiembreNegrohP"></div>
 
 			</div>
 			
 			<div class="fighters" id="CienCaras">
-				<div id="CienCarasname">CienCaras</div>
+				<div class="name" id="CienCarasname">Cien Caras</div>
 				<img id="cienCarasPic" src="assets/images/ciencaras.jpg">
 				<div class="hp" id="CienCarashP"></div>
 			</div>
 
 			<div class="fighters"id="BlueDemon">
-				<div id="BlueDemonname">BlueDemon</div>
+				<div class="name" id="BlueDemonname">Blue Demon</div>
 				<img id="BlueDemonPic" src="assets/images/bluedemon.jpg">
 				<div class="hp" id="BlueDemonhP"></div>
 			</div>
 
 			<div class="fighters"id="Zeus">
-				<div id="Zeusname">Zeus</div>
+				<div class="name"id="Zeusname">Zeus</div>
 				<img id="ZeusPic" src="assets/images/zeus.jpg">
 				<div class="hp"id="ZeushP"></div>
 			</div>
 
 
 		</div>
-
-		<!---YOUR FIGHTER-->
+	</div>
+	<div id="background2">
+		
 		<h1 id="yourFighterheading">Your Luchador</h1>
-		<div id="yourFighter"></div>
+		<h1 id="adversaryHeading">Contrincante</h1>
+		<!---YOUR FIGHTER-->
 
+		<div id="yourFighter"></div>
+		<!---ADVERSARY AREA-->
+		
+		<div id="adversaryArea"></div>
+	
+	</div>
+	
+	<div id="background3">
 		<!---CHOOSE ADVERSARY-->
 		<h1 id="chooseAdversaryheading">Luchadores Available to Fight</h1>
 		<div id="chooseAdversary"></div>
@@ -73,17 +86,14 @@
 		<div id="fightSection">
 			<button type="button" id="fightButton">Luchar</button>
 		</div>
+	</div>
+		
 
-		<!---ADVERSARY AREA-->
-		<h1 id="adversaryHeading">Contrincante</h1>
-		<div id="adversaryArea"></div>
 		<!---MSG AREA-->
-		<div class="msg"></div>
 		<div class="msg1"></div>
 		<div class="msg2"></div>
-		<div class="msg3"></div>
-		<div class="msg4"></div>
 
+		<!--DIVWILL BE HIDDEN---->
 		<div class="loosers"></div>
 
 

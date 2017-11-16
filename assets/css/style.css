@@ -1,10 +1,115 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url("../images/background2.jpg");
+}
+header{
+	font-family: 'Lobster', cursive;
+	text-align: right;
+	
+	
+}
+h1{
+	display:inline-block;
+	font-size: 20px;
+	color:#ffffff;
+	font-family: 'Bungee', cursive;
+	background-color: #00aaa6;
+	padding:3px;
+	margin:3px;
+
+}
+#title{
+	font-size:70px;
+	margin-right: 35%;
+	color: #ffffff;
+}
+#sub{
+	font-size:20px;
+	margin-right: 25%;
+	padding-top:10px;
+	font-family: 'Bungee Inline', cursive;
+	color:#ffffff;
+}
+#background{
+	width:70%;
+	margin:20px auto;
+	background-color: transparent;
+	font-family: 'Bungee Inline', cursive;
+
+}
+.name{
+	font-size: 15px;
+	padding:5px 5px;
+	background-color:#f0386d;
+	margin-bottom: 5px;
+	color:#ffffff;
+}
+.hp{
+	background-color: #6c8d6a;
+	padding:5px 0;
+	color:#ffffff;
+
+}
+
+#chooseFighter{
+	width:100%;
+	margin:0px auto;
+}
+.fighters{
+	background-color:#ebf32f;
+	width: 24.2%;
+	display: inline-block;
+	text-align: center;
+	
+}
 img{
-	width:100px;
-	height:150px;
+	width:150px;
+	height:180px;
 	margin:0 auto;
 
 }
-.fighters,.enemies{
-	display: inline-block;
+
+#background2{
+	width:30%;
+	float:left;
+	margin-left:40px;
+}
+
+#yourFighterheading{
+	float:left;
+	
+}
+
+#adversaryHeading{
+	
+	float:right;
+}
+#yourFighter{
+	clear:both;
+	float:left;
+}
+#adversaryArea{
+	
+	float:right;
+}
+#background3{
+	
+	float:right;
 	text-align: center;
+	width:50%;
+	margin-right: 5px;
+	
+
+}
+
+#chooseAdversaryheading,#chooseAdversary
+{
+	clear:both;
+}
+
+
+.
+.loosers{
+	display:none;
 }
