@@ -17,10 +17,11 @@ h1{
 	background-color: #00aaa6;
 	padding:3px;
 	margin:3px;
+	border: 2px dashed #cefc19;
 
 }
 #title{
-	font-size:70px;
+	font-size:80px;
 	margin-right: 35%;
 	color: #ffffff;
 }
@@ -102,14 +103,37 @@ img{
 	
 
 }
+#ring{
+	clear: both;
+	width:40%;
 
-#chooseAdversaryheading,#chooseAdversary
-{
-	clear:both;
+	margin-left:40px;
+
+}
+#fightButton{
+	width:30%;
+	font-size:20px;
+	color:#ffffff;
+	background-color:#324471;
+	padding:5px;
+	font-family: 'Bungee Inline', cursive;
+	border: 5px dashed #d03d19;
+	margin:0 auto;
+}
+#msg{
+	width:100%;
+	padding:10px;
+	margin:20px auto;
+	text-align: center;
+	color:#921d75;
+	font-size: 30px;
+	background-color:#ffffff;
+	border:5px dashed 
+#e93247;
+	font-family: 'Bungee', cursive;
+
 }
 
-
-.
 .loosers{
 	display:none;
 }
