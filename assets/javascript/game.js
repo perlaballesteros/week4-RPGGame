@@ -24,6 +24,7 @@ var contrincante;
 
 //luchador values
 var hPluchador;
+var hPluchadorreset;
 var aPluchador;
 //contrincante values
 var hPcontrincante;
@@ -84,7 +85,7 @@ $("#chooseFighter").on("click",".fighters",function(){
 	console.log(hPluchador);
 	console.log(aPluchador);
 	//-----------------------------------------------
-	
+	hPluchadorreset=hPluchador;
 	//----MOVING YOUR CHOSEN LUCHADOR TO YOURFIGHTERDIV-------
 	var clicked=$(this).detach();
 	clicked.appendTo("#yourFighter");
@@ -207,6 +208,10 @@ $("#fightButton").on("click",function(){
 					var looser=$("#adversaryArea .contrincante").detach();
 					looser.appendTo($(".loosers"));
 					$(".msg1").text("Well done, choose another contrincante");
+					hPluchador=hPluchadorreset;
+					$(".luchador .hp").text(hPluchador);
+
+
 				}
 				//---IF NOREMEINING ADVS REST BUTTON-------
 				if($("#chooseAdversary").html()==="")
@@ -230,19 +235,6 @@ $("#fightButton").on("click",function(){
 $(".msg2").on("click",".reset", function(){
 	
 	location.reload();
-	/*console.log("im"); 
-	var luchadorgoback=$("#yourFighter .luchador").detach();
-	luchadorgoback.appendTo($("#chooseFighter"));
-
-	var chooseAdvsgoback=$("#chooseAdversary .fighters").detach();
-	chooseAdvsgoback.appendTo("#chooseFighter");
-
-	var contrincantegoback=$("#adversaryArea .contrincante").detach();
-	chooseAdvsgoback.appendTo("#chooseFighter");
-
-	var loosersgoback=$(".loosers .contrincante").detach();
-	loosersgoback.appendTo("#chooseFighter");*/
-
 
 });
 
