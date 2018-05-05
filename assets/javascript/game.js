@@ -140,7 +140,7 @@ $("#chooseAdversary").on("click",".fighters",function(){
 	$(this).toggleClass("fighters");
 	$(this).toggleClass("contrincante");
 
-	//setting msg blanck incase msg appeared before adv was chosen
+	//setting msg blank in case msg appeared before adv was chosen
 	$(".msg1").text(" ");
 
 });
